@@ -1,0 +1,339 @@
+.tetris-container {
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tetris-canvas {
+    background: #1a1a2e;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.game-info div {
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.game-info span {
+    color: #4cc9f0;
+}
+
+.next-piece {
+    margin-top: 1rem;
+}
+
+#next-canvas {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.controls button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #4cc9f0;
+    color: #1a1a2e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.controls button:hover {
+    background: #f72585;
+    color: white;
+}
+
+#pause-btn {
+    display: none;
+    background: #f72585;
+    color: white;
+}
+
+#pause-btn:hover {
+    background: #4cc9f0;
+    color: #1a1a2e;
+}
+
+.mobile-controls {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.mobile-btn {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mobile-btn:active {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#rotate-btn {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#down-btn {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#left-btn {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#right-btn {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .mobile-controls {
+        display: grid;
+    }
+    
+    #tetris-canvas {
+        width: 300px;
+        height: 600px;
+    }
+    
+    .game-info {
+        gap: 1rem;
+    }
+    
+    .game-info div {
+        font-size: 1rem;
+        min-width: 80px;
+    }
+}
+.tetris-container {
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#tetris-canvas {
+    background: #1a1a2e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    width: 300px;
+    height: 600px;
+}
+
+.game-info-panel {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 200px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.game-info {
+    margin-bottom: 20px;
+}
+
+.game-info div {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.game-info span {
+    color: #4cc9f0;
+}
+
+.next-piece-container {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.next-piece-label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#next-canvas {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.controls button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #4cc9f0;
+    color: #1a1a2e;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.controls button:hover {
+    background: #f72585;
+    color: white;
+}
+
+#pause-btn {
+    background: #f72585;
+    color: white;
+}
+
+#pause-btn:hover {
+    background: #4cc9f0;
+    color: #1a1a2e;
+}
+
+.mobile-controls {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.mobile-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mobile-btn:active {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#rotate-btn {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#down-btn {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#left-btn {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#right-btn {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .mobile-controls {
+        display: grid;
+    }
+    
+    .game-area {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .game-info-panel {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    #tetris-canvas {
+        width: 100%;
+        max-width: 300px;
+        height: 500px;
+    }
+}
+.spacer {
+    width: 200px; /* Same width as game-info-panel */
+    visibility: hidden; /* Makes it invisible but still takes up space */
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+    .spacer {
+        display: none; /* Hide spacers on mobile */
+    }
+    
+    .game-area {
+        flex-direction: column;
+    }
+    
+    .game-info-panel {
+        order: 1; /* Makes info panel appear first on mobile */
+        margin-bottom: 20px;
+    }
+    
+    #tetris-canvas {
+        order: 2; /* Makes canvas appear second on mobile */
+    }
+}
