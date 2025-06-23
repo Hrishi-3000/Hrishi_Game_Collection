@@ -16,7 +16,6 @@ A collection of classic games built with pure JavaScript, HTML, and CSS. Perfect
 1. **Snake** - Classic snake game with score tracking
 2. **Tetris** - The iconic block-stacking puzzle game
 3. **Memory** - Card matching memory game
-4. **Wordle** - Popular word guessing game (tech-themed)
 
 ## 🚀 Getting Started
 
