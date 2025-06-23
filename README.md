@@ -2,10 +2,6 @@
 
 A collection of classic games built with pure JavaScript, HTML, and CSS. Perfect for showcasing frontend development skills!
 
-[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://yourusername.github.io/game-collection)
-![License](https://img.shields.io/github/license/yourusername/game-collection?style=for-the-badge)
-
-![Game Collection Screenshot](./screenshot.png) <!-- Add your screenshot -->
 
 ## ✨ Features
 
