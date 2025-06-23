@@ -21,9 +21,4 @@ A collection of classic games built with pure JavaScript, HTML, and CSS. Perfect
 
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Edge, Safari)
-- (Optional) Node.js if you want to run locally
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/game-collection.git
